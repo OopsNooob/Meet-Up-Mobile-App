@@ -7,8 +7,6 @@ yarn-error.log*
 
 # Node modules
 node_modules/
-backend/node_modules/
-mobile/node_modules/
 
 # OS files
 .DS_Store
@@ -25,12 +23,8 @@ Thumbs.db
 .env.*
 !.env.example
 
-# Build and Distribution (Backend)
-backend/dist/
-backend/coverage/
-
-# Build and Expo files (Mobile)
-mobile/.expo/
-mobile/dist/
-mobile/web-build/
-mobile/coverage/
+# Build and Expo files
+.expo/
+dist/
+web-build/
+coverage/

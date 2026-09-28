@@ -19,9 +19,8 @@ Tài liệu này ghi nhận quá trình Brainstorming và các quyết định t
 ## 3. Thiết kế Cấu trúc (Final Design)
 
 ### 3.1. Repository Structure
-Dự án được chia thành 2 thư mục riêng biệt nằm trong cùng một repository:
-- `/mobile`: Mã nguồn ứng dụng di động.
-- `/backend`: Mã nguồn server.
+Dự án đã được tách làm 2 repo riêng biệt. Repository hiện tại chỉ chứa mã nguồn của ứng dụng Mobile.
+- Mã nguồn ứng dụng di động nằm ngay tại thư mục gốc.
 
 ### 3.2. Cấu trúc thư mục Mobile (Expo Router + Zustand)
 - `app/`: Quản lý các màn hình (screens) theo cơ chế file-based routing của Expo Router.
