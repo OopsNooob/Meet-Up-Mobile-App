@@ -1,56 +1,54 @@
-# Welcome to your Expo app 👋
+# MeetUp Mobile App 📍
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MeetUp is a smart mobile application designed to help you and a group of friends easily find, suggest, and agree on an ideal meeting location. The app focuses on calculating the fairest travel distance for everyone based on current locations, combined with group preferences to provide optimal suggestions.
 
-## Get started
+## 🌟 Key Features
 
-1. Install dependencies
+- **Create and Manage Meetups:** Schedule meetups and invite friends to join.
+- **Secure Location Sharing:** The app only uses your location with your explicit consent and only while a meetup is active.
+- **Location Suggestion Engine:** Suggests places based on `Avg ETA` (average travel time) and `Max ETA` (longest travel time) to ensure fairness. Integrates an AI engine to explain why specific locations were suggested.
+- **Voting System:** Members can vote together to finalize the meetup location.
+- **Real-time Chat:** Built-in private group chat rooms for each meetup.
+- **Nearby Friends Detection:** Suggests a spontaneous meetup when a friend is detected nearby (only if both users have enabled the feature).
 
+## 🛠 Tech Stack
+
+- **Framework:** React Native / [Expo](https://expo.dev/) (SDK 57)
+- **State Management:** [Zustand](https://github.com/pmndrs/zustand)
+- **Networking:** Axios, Socket.io-client (for real-time chat)
+- **Native Modules:** 
+  - `expo-location`: For GPS coordinates.
+  - `react-native-maps`: For displaying maps.
+  - `expo-notifications`: Push notifications (FCM).
+  - `expo-secure-store`: Secure storage for JWT tokens.
+  - `expo-auth-session` / `expo-crypto`: User authentication (Google OAuth).
+
+## 🚀 Setup and Installation Guide
+
+### System Requirements
+- Node.js & pnpm
+- Android Studio (Android Emulator) or a physical Android device with USB Debugging enabled.
+- The `ANDROID_HOME` environment variable configured correctly.
+
+### Running the App
+
+1. **Install Dependencies:**
    ```bash
-   npm install
+   pnpm install
    ```
 
-2. Start the app
-
+2. **Run the Application (Build Native Android):**
    ```bash
-   npx expo start
+   pnpm expo run:android
+   ```
+   *(This command will automatically compile the native Java/Kotlin code and install the .apk on your emulator).*
+
+3. **Clear Native Cache (If rebuilding is needed):**
+   If you change configurations in `app.json` or encounter environment issues, run:
+   ```bash
+   pnpm expo prebuild --clean
+   pnpm expo run:android
    ```
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📄 License
+This is an internal project. All rights reserved.
