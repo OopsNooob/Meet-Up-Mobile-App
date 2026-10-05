@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "login": "Đăng nhập",
+    "login_google": "Tiếp tục với Google"
+  },
+  "tabs": {
+    "map": "Bản đồ",
+    "meetups": "Meetup",
+    "friends": "Bạn bè",
+    "profile": "Cá nhân"
+  },
+  "meetup": {
+    "create": "Tạo Meetup",
+    "list_empty": "Chưa có meetup nào."
+  }
+}

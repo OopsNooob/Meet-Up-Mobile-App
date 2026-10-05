@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "login": "Login",
+    "login_google": "Continue with Google"
+  },
+  "tabs": {
+    "map": "Map",
+    "meetups": "Meetups",
+    "friends": "Friends",
+    "profile": "Profile"
+  },
+  "meetup": {
+    "create": "Create Meetup",
+    "list_empty": "No active meetups."
+  }
+}
