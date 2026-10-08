@@ -12,5 +12,111 @@
   "meetup": {
     "create": "Create Meetup",
     "list_empty": "No active meetups."
+  },
+  "fe2": {
+    "common": {
+      "stale_label": "⚠ Stale location",
+      "no_rating": "No rating",
+      "no_opening_hours": "No data available",
+      "open_now": "🟢 Open now",
+      "closed": "🔴 Closed",
+      "avg_eta": "Avg ETA",
+      "max_eta": "Max ETA",
+      "min": "min",
+      "retry": "Retry",
+      "understood": "Got it",
+      "loading": "Loading...",
+      "send_directions": "🗺 Open Google Maps"
+    },
+    "location": {
+      "screen_title": "Location Settings",
+      "permission_section": "GPS Permission",
+      "sharing_section": "Location Sharing",
+      "mode_section": "Share with",
+      "granted": "Location permission granted",
+      "denied": "Location permission denied",
+      "blocked": "Blocked — requires manual action",
+      "undetermined": "Permission not requested",
+      "denied_hint": "The app needs location access to show friends on the map and suggest meetup spots.",
+      "blocked_hint": "Location is fully blocked. Go to Settings → Privacy → Location to enable it.",
+      "open_settings": "Open System Settings",
+      "grant_permission": "Grant location access",
+      "sharing_toggle_label": "Enable location sharing",
+      "sharing_toggle_sub": "Friends can see your location (up to 5 minutes)",
+      "mode_friends": "All friends",
+      "mode_friends_sub": "Confirmed friends can see your location",
+      "mode_timed": "Timed (1 hour)",
+      "mode_timed_sub": "Automatically stops sharing after 1 hour",
+      "mode_off": "Off",
+      "mode_off_sub": "Nobody can see your location",
+      "accuracy_warn_title": "⚠️ Low GPS accuracy",
+      "accuracy_warn_body": "Current location accuracy is > 100 m. Meetup suggestions may be less accurate. Try going outdoors or enabling Wi-Fi."
+    },
+    "map": {
+      "screen_title": "Friend Map",
+      "socket_connecting": "Connecting to realtime...",
+      "socket_connected": "Realtime connected",
+      "socket_disconnected": "Disconnected — reconnecting",
+      "legend_fresh": "Fresh location (<5 min)",
+      "legend_stale": "Stale location (>5 min)",
+      "legend_offline": "Not sharing",
+      "location_info": "Location info",
+      "accuracy_label": "Accuracy",
+      "just_updated": "Just updated",
+      "minutes_ago": "{{count}} min ago",
+      "hours_ago": "{{count}} hr ago"
+    },
+    "recommendation": {
+      "screen_title": "Place Suggestions",
+      "missing_location": "⚠️ {{name}} hasn't shared location — results based on {{count}} people",
+      "filter_open_now": "🟢 Open now",
+      "result_count": "{{count}} places",
+      "empty_filtered": "No places are currently open.\nTurn off the filter to see more.",
+      "scale_exact": "Exact",
+      "scale_batch": "Batch",
+      "scale_cluster": "~Estimated",
+      "why_button": "Why this suggestion? 🤖",
+      "eta_per_member": "ETA per member"
+    },
+    "place_detail": {
+      "screen_title": "Place Details",
+      "opening_hours_section": "Opening Hours",
+      "no_data_hint": "Google Places doesn't provide opening hours for this place. Please check before visiting.",
+      "rating_section": "Rating",
+      "reviews_count": "{{count}} reviews",
+      "eta_section": "Travel Time"
+    },
+    "chat": {
+      "screen_title": "Group Chat",
+      "input_placeholder": "Type a message...",
+      "offline_banner": "📡 Disconnected — messages will be resent when reconnected",
+      "status_pending": "⏳ Sending...",
+      "status_error": "⚠ Failed — Tap to retry"
+    },
+    "ai_explanation": {
+      "screen_title": "Why this suggestion?",
+      "loading": "Analyzing with AI...",
+      "ai_badge": "✨ AI Explanation",
+      "fallback_badge": "⚠ AI unavailable — Reason from algorithm",
+      "disclaimer": "* This explanation is informational only and does not change the ranking."
+    },
+    "nearby": {
+      "screen_title": "Nearby Friends",
+      "intro_title": "📍 Detect Nearby Friends",
+      "intro_desc": "When you and a friend both enable this and are within your chosen radius, you'll get a suggestion to create a meetup.\n\n⚠️ We never share your friend's exact location. You only receive a notification saying \"You and a friend are nearby.\"",
+      "opt_in_label": "Enable nearby friend detection",
+      "opt_in_sub": "Both sides must enable this for it to work",
+      "disable_title": "Disable nearby detection?",
+      "disable_body": "You won't receive meetup suggestions when friends are nearby.",
+      "disable_confirm": "Disable",
+      "cancel": "Cancel",
+      "radius_section": "Detection radius",
+      "cooldown_title": "⏱ Waiting before next suggestion",
+      "cooldown_desc": "To avoid spam, suggestions are limited to once per 2 hours per friend pair.\nRemaining: {{time}}",
+      "detected_title": "🎉 You and a friend are nearby!",
+      "create_meetup": "Create Meetup",
+      "idle_text": "🔍 Watching... No friends detected within {{radius}}",
+      "privacy_note": "🔒 Privacy: We never reveal the exact location or address of your friends, and vice versa."
+    }
   }
 }

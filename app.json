@@ -9,7 +9,12 @@
     "userInterfaceStyle": "automatic",
     "android": {
       "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.mobile"
+      "package": "com.anonymous.mobile",
+      "config": {
+        "googleMaps": {
+          "apiKey": "DUMMY_API_KEY_TO_PREVENT_CRASH"
+        }
+      }
     },
     "web": {
       "output": "static",
@@ -20,9 +25,9 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "backgroundColor": "#ffffff",
+          "image": "./assets/images/logo-glow.png",
+          "imageWidth": 200
         }
       ],
       "expo-secure-store"
